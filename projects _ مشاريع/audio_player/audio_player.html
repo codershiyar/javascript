@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coder Shiyar</title>
+    <link rel="icon" href="img/logo.jpg">
+    <link rel="stylesheet" href="css/audio_player.css">
+    <link rel="stylesheet" href="css/header_nav.css">
+    <link rel="stylesheet" href="css/article.css">
+</head>
+<body>
+    <div id="audio_player">
+        <main>
+            <header id="header">
+                  
+                <nav>
+                    <img src="img/logo.jpg" alt="">
+                    <h2 id="siteName">Name Site</h2>
+                    <p id="radio-title">اسم اغنية</p>
+                </nav>
+            </header>
+
+ 
+            <article id="player_buttons">
+                <img src="img/back.png" alt="" id="back">
+                <img src="img/play.png" alt="" id="play">
+                <img src="img/next.png" alt="" id="next">
+            </article>
+
+            <article>
+                <audio src="" id="audio_file"></audio>
+                <h2>الصوت</h2>
+                <input id="volume" type="range" value="50" min="0" max="100" id="range">  
+                <h2>السرعة</h2>
+                <input id="speed" type="range" value="100" min="0" max="200" id="range">         
+            </article>
+
+            
+            <article id="colors">
+                    <button id="color-1"></button>
+                    <button id="color-2"></button>
+                    <button id="color-3"></button>
+                    <button id="color-4"></button>
+           </article>
+           <footer>
+
+           </footer>
+        </main>
+    </div>
+    <script src="scripts/resize.js"></script>
+    <script src="scripts/volume.js"></script>
+    <script src="scripts/speedVolume.js"></script>
+    <script src="scripts/colors.js"></script>
+    <script src="scripts/player_buttons.js"></script>
+</body>
+</html>

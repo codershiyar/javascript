@@ -1,0 +1,286 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to right, red,rgb(247, 86, 86))
+}
+#logoBox{
+    width: 30%;
+    height: 100%;
+    float: right;
+    background-color: #fafafa;
+}
+#h1Header{
+    float: left;
+    line-height: 100px;
+    padding: 0 15px;
+}
+#logo{
+    height: 100%;
+    border-radius: 50%;
+    float: right;
+}
+header a{
+    color:black;
+}
+nav{
+    width: 70%;
+    text-align: center;
+}
+
+nav a{
+   text-decoration: none;
+   color:white;
+   font-weight: bold;
+   display: inline-block;
+}
+nav li{
+    display: inline-block;
+    line-height: 100px;
+    width: 100px;
+    text-align: center;
+}
+nav a:hover{
+    background-color: white;
+    color:black;
+    height: 100%;
+    width: 100%;
+}
+main{
+    width: 100%;
+    height: 450px;
+    background-color: rgb(255, 55, 55);
+    border-top: 3px solid white;
+    animation-name: changeBackground;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+
+}
+aside{
+    width: 30%;
+    height: 100%;
+    background-color: #fafafa;
+    text-align: center;
+    float: left;
+}
+aside img{
+    width: 90%;
+}
+#h1Aside{
+   padding: 20px 0;
+   border-bottom: 2px solid red;
+}
+#article{
+    float: right;
+    width: 70%;
+    height: 450px;
+    position: relative;
+}
+#box{
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    width: 400px;
+    height: 180px;
+    background-color:#fafafa;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+#box h1{
+    border-bottom: 3px solid red;
+    padding: 15px 0;
+}
+#box p{
+    font-family: 'Cairo', sans-serif;
+    text-align: justify;
+}
+#contact-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+#contact-box img{
+    width: 45px;
+    border-bottom: 2px double rgb(231, 62, 62);
+    padding-bottom: 10px;
+}
+#contact-box img:hover{
+    width: 55px;
+    border-bottom: 2px solid black;
+}
+@keyframes changeBackground{
+    0%{
+        background-color: white;
+    }
+ 
+    50%{
+        background-color: rgb(255, 55, 55);;
+    }
+    100%{
+        background-color: red;
+    }
+}
+#print{
+    display: none;
+}
+
+@media only screen and (min-width:940px) and (max-width:1070px){
+    #logoBox{
+        width: 35%;
+    }
+    #article{
+        width: 65%;
+    }
+    aside{
+        width: 35%;
+    }
+}
+@media only screen and (max-width:940px){
+    #logoBox{
+        width: 40%;
+    }  
+}
+@media only screen and (max-width:801px){
+    header, main{
+        height: auto;
+    }
+    #logoBox{
+        width: 100%;
+        text-align: center;
+    }
+    #h1Header,#logo{
+        float: none;
+    }
+    span a{
+        text-decoration: none;
+    }
+    nav{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    #article{
+        height: 230px;
+        width:100%;
+        background-color: #fafafa;
+    }
+}
+@media only screen and (max-width:500px){
+    nav li{
+        display: block;
+        width:100%;
+    }
+}
+@media only screen and (orientation:landscape) and (max-width:500px){
+    #logoBox{
+        background-color: aqua;
+    }
+}
+@media print{
+    nav{
+        display: none;
+    }
+    #print{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@media only screen and (max-width:1070px) and (min-width:916px){
+    #logoBox{
+        width:35%;
+    }
+}
+
+@media only screen and (min-width:802px) and (max-width:917px){
+    #logoBox{
+        width:40%;
+    }
+}
+@media only screen and (max-width:802px){
+    header{
+        height: auto;
+    }
+    #logoBox{
+        width: 100%;
+        text-align: center;
+    }
+    #h1Header{
+        float: none;
+    }
+    span a{
+        text-decoration: none;
+    }
+    nav{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    main{
+        height: auto;
+    }
+    #article{
+        height: 230px;
+        width: 100%;
+        background-color: #fafafa;
+        border-top:2px solid red;
+    }
+    #box{
+        background-color: #6a7272;
+    }
+    #logo{
+        float: none;
+    }
+
+}
+
+@media only screen and (max-width:500px) and (orientation: landscape){
+    nav li {
+        display: block;
+        width: 100%;
+    }
+    #logoBox{
+        background-color: aqua;
+    }
+}
+
+@media print{
+    nav{
+        display: none;
+    }
+    #copyRight{
+        display: none;
+    }
+} */
