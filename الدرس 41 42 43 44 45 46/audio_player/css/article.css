@@ -1,0 +1,56 @@
+article{
+    text-align: center;
+}
+#player_buttons{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+#player_buttons img{
+    margin: 0 15px;
+    float: left;
+    width: 45px;
+    height: 45px;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    background: #e6e7e8;
+    margin: 0px;
+  }
+input[type=range]::-webkit-slider-thumb {  
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: #f65b79;
+    -webkit-appearance: none;
+}
+#colors{
+    margin-top:15px;
+}
+#colors button{
+    margin-top: 12px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 0px solid white;
+}
+#color-1{
+    background:#212020;
+}
+#color-2{
+    background:#ff5353;
+}
+#color-3{
+    background:#009688;
+}
+#color-4{
+    background:#222a4c;
+}
+
+footer{
+    height: 90px;
+    background: white;
+}

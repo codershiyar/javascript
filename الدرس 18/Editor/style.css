@@ -5,7 +5,7 @@
 h2{
     width: 100%;
     text-align: center;
-    background-color: rgb(238, 83, 44);
+  background: linear-gradient(45deg, #00ff86, #ff2727ad);
     color: aliceblue;
     padding: 20px 0px;
 }
@@ -17,7 +17,7 @@ button{
     text-align: center;
 
  width: 49.5%;
- background-color: #262a2d;
+ background-color: #6d6d6d;
  color: white;
  padding: 20px 0px;
 }
