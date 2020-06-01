@@ -70,23 +70,29 @@
          
          <script>
             let section_android = document.getElementById("android");
-
+            
+            // لجلب بيانات عن جهاز المستخدم
             let user_device = navigator.userAgent.toLocaleLowerCase();
 
+            //  للتحقق من إن كان مستخدم يملك جهاز يعمل بنظام اندرويد او لا
             if(user_device.includes("android")){
 
+                // لتاخير عرض الصندوق حسب المدة الذي تحدده بعد فتح مستخدم للموقعك
                 setTimeout(()=>{
                     section_android.style.display = "flex";
                 },1*1000)
-             
+
+                // لكي يودي المستخدم إلى صفحة تحميل تطبيق عند نقر على الزر
                 let app_downlaod = document.getElementById("app_downlaod");
                 app_downlaod.addEventListener("click", ()=>{
                    window.open("https://play.google.com/store/apps/details?id=com.shiyar&hl=ar","_blank")     
                 }); 
             }else{
+                // لإخفاء العنصر عندما يكون مستخدم جهازه يعمل بنظام ليس بنظام اندرويد
                 section_android.style.display = "none";
             }
-
+            
+            // لإخفاء العنصر عند نقر على علامة اكس
             let close = document.getElementById("close");
             close.addEventListener("click", ()=>{
                 section_android.style.display = "none";
