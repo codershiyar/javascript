@@ -1,0 +1,22 @@
+header{
+    width: 100%;
+    height: 310px;
+    background: wheat;
+    background-size: 100%;
+    text-align: center;
+    color: white;
+}
+nav img{
+    width: 140px;
+    border-radius: 50%;
+}
+nav{
+  transform: translateY(50px);
+  height:90px;
+}
+nav h2{
+font-size: 30px;
+}
+nav p{
+  font-size: 20px;
+}

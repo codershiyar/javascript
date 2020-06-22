@@ -1,0 +1,15 @@
+
+#audio_player{
+    position: absolute;
+    width: 350px;
+    height: 600px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color:#040243;
+}
+main{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
