@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder Shiyar - Add</title>
+</head>
+<body>
+    <form id="postForm">
+        <div>عنوان</div>
+        <input type="text" name="title" required/>
+        <div>محتوى لمنشور</div>
+        <input type="text" name="content" required/>
+        <button type="submit">نشر</button>
+    </form>
+
+    <script>
+let postForm = document.getElementById("postForm");
+postForm.onsubmit = (form)=>{
+    form.preventDefault();
+ let formData = new FormData(postForm);
+
+fetch("http://localhost/api/appApi/add.php", {
+    method : "POST",
+    body : formData
+}).then(response => response.json()).then(data =>{
+    console.log(data);
+});
+
+}
+    </script>
+</body>
+</html>

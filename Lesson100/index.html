@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder Shiyar</title>
+</head>
+<body>
+
+    <form method="GET" id="loginForm">
+        username :  <input type="text" name="username" />
+        <br>
+        password : <input type="text" name="password"/>
+        <button type="submit">تسجيل دخول</button>
+
+    </form>
+
+    <script>
+
+       let loginForm = document.getElementById("loginForm");
+       loginForm.onsubmit = (form)=>{
+        form.preventDefault();
+
+        let formData = new FormData(loginForm);
+        fetch("app.php",{
+            method : 'POST' ,
+            body:formData
+        }).then(response => response.text()).then(data =>{
+            console.log(data);
+        })
+       }
+
+        // let data = {name : "Coder Shiyar" , password: "1234"};
+        // fetch("app.php",{
+        //     method : 'POST' ,
+        //     body : JSON.stringify(data) , 
+        //     headers : {'Content-Type': 'application/json'}
+        // }).then(response => response.json()).then(data =>{
+        //     console.log(data);
+        // }).catch(error => {
+        //     console.log(error);
+        // });
+        
+    </script>
+</body>
+</html>

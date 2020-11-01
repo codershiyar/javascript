@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder Shiyar</title>
+</head>
+<body>
+
+    <form method="POST" id="loginForm">
+        username :  <input type="text" name="username" />
+        <br>
+        password : <input type="text" name="password"/>
+        <button type="submit">تسجيل دخول</button>
+
+    </form>
+
+    <script>
+
+
+// var formData = new FormData(); // Currently empty   
+
+// ---------------------------------------------------------------------------------------
+    // FormData.append()                  يستخدم لإضافة قيمة أخرى إلى اوبجكت
+// ---------------------------------------------------------------------------------------    
+    // FormData.delete()                      يستخدم لحذف احد قيم من اوبجكت  
+// ---------------------------------------------------------------------------------------    
+    // FormData.get()        يقوم بإعادة قيمة المخزنة ضمن مفتاح الذي نحدده
+// ---------------------------------------------------------------------------------------    
+    // FormData.getAll()     يقوم بإعادة قيمة المخزنة ضمن مفتاح الذي نحدده
+// ---------------------------------------------------------------------------------------    
+    // FormData.has()     يستخدم للتحقق إن كان مفتاح الذي نحدد يتواجد او لا
+// ---------------------------------------------------------------------------------------  
+   //  FormData.set()                     يستخدم لتعديل قيمة احد مفاتيح المخزنة ضمن اوبجكت 
+//                          وفي حال لم يجد اسم مفتاح الذي ترغب     بتعديله يقوم بإنشاء
+//                                    مفتاح بنفس اسم الذي حددته مع نفس قيمة الذي حددت
+
+       let loginForm = document.getElementById("loginForm");
+       loginForm.onsubmit = (form)=>{
+        form.preventDefault();
+
+        let formData = new FormData(loginForm);
+        formData.append("name" , "Coder Shiyar");
+
+        // formData.append("age" , 20);
+        formData.delete("username");
+        formData.set("age" , 21);
+
+        console.log(formData.get("age"));
+
+        fetch("app.php",{
+            method : 'POST' ,
+            body:formData
+        }).then(response => response.text()).then(data =>{
+            console.log(data);
+        })
+       }
+
+
+        
+    </script>
+</body>
+</html>

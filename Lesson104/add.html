@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder Shiyar - Add</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <main class="contanier" style="max-width: 800px; margin: auto;">
+
+
+    <form id="postForm">
+        <div class="p-3 shadow mb-1">عنوان</div>
+        <input class="form-control mb-1" type="text" name="title" required/>
+        <div class="p-3 shadow mb-1">محتوى لمنشور</div>
+        <input class="form-control mb-1"  type="text" name="content" required/>
+        <button class="btn btn-warning mt-3 w-100" type="submit">نشر</button>
+    </form>
+</main>
+    <script>
+let postForm = document.getElementById("postForm");
+postForm.onsubmit = (form)=>{
+    form.preventDefault();
+ let formData = new FormData(postForm);
+
+fetch("http://localhost/api/appApi/add.php", {
+    method : "POST",
+    body : formData
+}).then(response => response.json()).then(data =>{
+    console.log(data);
+});
+
+}
+    </script>
+</body>
+</html>

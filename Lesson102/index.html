@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder Shiyar</title>
+</head>
+<body>
+<form id="formFiles" method="POST" enctype="multipart/form-data">
+
+    File 2 : <input type="file" name="file1"/>
+    <br>
+    File 2 : <input type="file" name="file2"/>
+
+    <button type="submit">ارسال</button>
+</form>
+
+<script>
+let formFiles = document.getElementById("formFiles");
+formFiles.onsubmit = (form)=>{
+    form.preventDefault();
+
+    let formData = new FormData(formFiles);
+
+    fetch("app.php" , {
+        method : "POST" ,
+        body : formData
+    });
+};
+</script>
+</body>
+</html>
