@@ -18,10 +18,13 @@ document.getElementById("getLocation").onclick = ()=>{
     shareLocation = navigator.geolocation.watchPosition(
         function(position){
             accessLocation = true
+            
            document.getElementById("alert").innerHTML = `
            <div class="alert alert-success" 
             role="alert"> يتم عرض موقعك الان في خريطة بشكل مباشر </div> `
- 
+            document.getElementById("getLocation").innerHTML = "إيقاف مشاركة"
+            isLive = true 
+            
             document.getElementById("map").innerHTML = 
             `<iframe height="400" width="100%" src="https://www.openstreetmap.org/export/embed.html?bbox=${position.coords.longitude},${position.coords.latitude}&;layer=mapnik"> </iframe> `
         },
