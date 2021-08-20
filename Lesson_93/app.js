@@ -1,0 +1,6 @@
+// ---------------------------------------------------------------
+// JavaScript Obfuscator Tool  -  obfuscator.io
+// هي أداة مجانية عبر الإنترنت تقوم بتشويش شفرة المصدر الخاصة بك 
+// ، وتمنعها من السرقة واستخدامها دون إذن.
+// ---------------------------------------------------------------
+var _0xe497=['1195CbwNoo','909477oZVOmX','17274aueJUG','64601abcTkT','183BcVQVt','تم\x20برمجة\x20هذا\x20مشروع\x20بواسطة\x20Coder\x20Shiyar','524400EQjqAu','13cdKHrZ','10InVvBg','64495ifZbHs','19lVMrPz','log','19915ixwuJP'];function _0x3b28(_0x576cf7,_0x1d026d){return _0x3b28=function(_0xe49781,_0x3b28e9){_0xe49781=_0xe49781-0x1f2;var _0x56bdf3=_0xe497[_0xe49781];return _0x56bdf3;},_0x3b28(_0x576cf7,_0x1d026d);}var _0x33999c=_0x3b28;(function(_0x1789c7,_0x563e2e){var _0x55164e=_0x3b28;while(!![]){try{var _0x57797d=parseInt(_0x55164e(0x1fc))*parseInt(_0x55164e(0x1f5))+parseInt(_0x55164e(0x1f4))+parseInt(_0x55164e(0x1f9))*parseInt(_0x55164e(0x1fb))+-parseInt(_0x55164e(0x1f8))+parseInt(_0x55164e(0x1fa))*parseInt(_0x55164e(0x1fe))+-parseInt(_0x55164e(0x1f3))+-parseInt(_0x55164e(0x1f6))*parseInt(_0x55164e(0x1f2));if(_0x57797d===_0x563e2e)break;else _0x1789c7['push'](_0x1789c7['shift']());}catch(_0x2c0cb7){_0x1789c7['push'](_0x1789c7['shift']());}}}(_0xe497,0x99bd4),console[_0x33999c(0x1fd)](_0x33999c(0x1f7)));
